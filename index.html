@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="hover.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/custom.min.css">
+
+</head>
+
+<body>
+
+	<div class="landingpage">
+		<div class="box">
+
+				<h1><span class="spotifygreen">Brand Identiy</span>
+					<br>
+					Guidelines</h1>
+
+				<h3>how we create music moments</h3>
+		</div>
+
+
+		<div class="navonbottom navigate">
+			<div class="logo">
+				<img src="../spotifygreen.png" alt="">
+			</div>
+
+			<div class="flex">
+					<div class="flex-item hvr-underline-from-center">
+						<a href="/ok">imagery</a>
+					</div>
+					<div class="flex-item">/
+					</div>
+					<div class="flex-item hvr-underline-from-center">
+						<a href="/ss">font</a>
+					</div>
+					<div class="flex-item">/
+					</div>
+					<div class="flex-item hvr-underline-from-center">
+						<a href="/ss">color</a>
+					</div>
+
+			</div> <!-- end flex -->
+		</div> <!-- end navonbottom -->
+	</div> <!-- end landing -->
+
+	
+
+
+	<div class="imgpage">
+		
+		<div class="infopanel">
+		<h2>1. Imagery is one of our most important brand assets</h2>
+
+		<ul>
+			<li>Candid & real</li>
+			<li>Macro & micro</li>
+			<li>Place & personality</li>
+			<li>Presence of music</li>
+		</ul>
+		</div>
+
+		<div class="imagespanel">
+
+			<div id="photostop">
+				<img src="http://placehold.it/750x400" alt="">
+				<img src="http://placehold.it/750x400" alt="">
+			</div><br><br><br>
+			<div id="photos">
+				<img src="http://placehold.it/400x240" alt="">
+				<img src="http://placehold.it/400x240" alt="">
+				<img src="http://placehold.it/400x240" alt="">
+			</div>
+		</div>		
+	</div>
+
+
+	<div class="fontpage">
+		<div class="infopanel">
+			<h2>Fontface</h2>
+			<p>We use Proxima Nova as our primary typeface for all text: headlines, subheads, body copy.</p>
+		</div>
+
+		<div class="fontpanel">
+			<p>AaBbCcDdEeFfGgHh<br>IiJjKkLlMmNnOoPpQq<br>RrSsTtUuVvWwXxYyZz<br>
+			1234567890!@#%</p>
+		</div>
+	</div>
+
+
+
+			
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				(function(){
+					var top = document.querySelector('.navonbottom');
+					window.addEventListener('scroll', function () {
+
+						if ( this.pageYOffset >= 885) {
+							top.classList.add('sticky');
+							top.classList.remove('navonbottom');
+
+						} else {
+							top.classList.remove('sticky');
+							top.classList.add('navonbottom');
+						}
+
+						console.log(this.pageYOffset);
+
+					});
+				})();
+			});
+		</script>
+	
+</body>
+</html>
